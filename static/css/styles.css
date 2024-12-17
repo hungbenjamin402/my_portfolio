@@ -325,6 +325,221 @@ html {
   color: white; /* Make text white for contrast */
 }
 
+/* Update */
+@media screen and (max-width: 1200px) {
+  .picture-intro {
+    margin-left: 5rem;
+    margin-right: 5rem;
+  }
+
+  #my-name {
+    font-size: 200px;
+  }
+
+  #intro-name {
+    font-size: 80px;
+  }
+
+  #last-name {
+    font-size: 80px;
+  }
+
+  .experiences-showcase {
+    max-width: 1000px;
+    padding: 1.5rem;
+  }
+
+  .projects-showscase {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+/* Medium Screens (max-width: 992px) */
+@media screen and (max-width: 992px) {
+  .header {
+    grid-template-columns: 1fr;
+    grid-template-rows: auto auto;
+    padding: 10px 0;
+  }
+
+  .header h1 {
+    text-align: center;
+    padding: 10px 20px;
+  }
+
+  .nav-bar ul {
+    padding: 20px 0;
+  }
+
+  .nav-list {
+    flex-wrap: wrap;
+    gap: 10px;
+  }
+
+  .picture-intro {
+    flex-direction: column;
+    align-items: center;
+    margin: 0 2rem;
+    text-align: center;
+  }
+
+  #profile-pic {
+    margin-right: 0;
+    margin-bottom: 30px;
+  }
+
+  #intro-paragraph {
+    margin-top: 50px;
+    font-size: 24px;
+    text-align: center;
+  }
+
+  #my-name {
+    font-size: 150px;
+  }
+
+  .introduction {
+    height: auto;
+    padding-bottom: 50px;
+  }
+
+  .experiences-row {
+    flex-direction: column;
+  }
+
+  .experience h1 {
+    font-size: 60px;
+  }
+}
+
+/* Small Screens (max-width: 768px) */
+@media screen and (max-width: 768px) {
+  .nav-list {
+    flex-direction: column;
+    gap: 15px;
+  }
+
+  .nav-button {
+    width: 80%;
+    padding: 0.8rem;
+  }
+
+  #my-name {
+    font-size: 100px;
+  }
+
+  #intro-name {
+    font-size: 60px;
+  }
+
+  #last-name {
+    font-size: 60px;
+  }
+
+  .projects-showscase {
+    grid-template-columns: 1fr;
+    padding: 10px;
+  }
+
+  .tech-stack {
+    grid-template-columns: repeat(2, 1fr);
+  }
+
+  .fa {
+    font-size: 50px;
+    padding: 15px;
+    width: 12px;
+  }
+}
+
+/* Extra Small Screens (max-width: 576px) */
+@media screen and (max-width: 576px) {
+  .header h1 {
+    font-size: 24px;
+    padding: 10px;
+  }
+
+  #profile-pic {
+    width: 250px;
+  }
+
+  #my-name {
+    font-size: 70px;
+  }
+
+  #intro-name {
+    font-size: 40px;
+  }
+
+  #last-name {
+    font-size: 40px;
+  }
+
+  #intro-paragraph {
+    font-size: 20px;
+  }
+
+  .experience h1 {
+    font-size: 40px;
+  }
+
+  .experience h2 {
+    font-size: 1.2rem;
+  }
+
+  .projects h1 {
+    font-size: 40px;
+  }
+
+  .tech-stack {
+    grid-template-columns: 1fr;
+  }
+
+  .experiences-showcase {
+    padding: 1rem;
+  }
+}
+
+/* Handle very small screens */
+@media screen and (max-width: 350px) {
+  #my-name {
+    font-size: 50px;
+  }
+
+  #profile-pic {
+    width: 200px;
+  }
+
+  .header h1 {
+    font-size: 20px;
+  }
+
+  .nav-button {
+    width: 90%;
+    font-size: 14px;
+  }
+}
+
+/* Add smooth transitions for responsive changes */
+.header,
+.picture-intro,
+#my-name,
+#intro-name,
+#last-name,
+.projects-showscase,
+.tech-stack {
+  transition: all 0.3s ease-in-out;
+}
+
+/* Improve touch targets on mobile */
+@media (hover: none) and (pointer: coarse) {
+  .nav-button,
+  .fa {
+    min-height: 44px;
+    min-width: 44px;
+  }
+}
+
 /* .footer {
   background-color:;
 } */
