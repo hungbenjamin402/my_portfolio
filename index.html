@@ -1,0 +1,251 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <title></title>
+    <meta name="Benj" content="" />
+    <meta name="viewport" content="width=device-width, initial-scale=0.9" />
+    <meta name="color-scheme" content="light dark" />
+    <link rel="stylesheet" href="/static/css/styles.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"
+    />
+
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=DM+Sans:ital,opsz,wght@0,9..40,100..1000;1,9..40,100..1000&family=Roboto+Flex:opsz,wght@8..144,100..1000&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&family=Rouge+Script&display=swap"
+      rel="stylesheet"
+    />
+  </head>
+  <body>
+    <div class="cursor"></div>
+    <div class="scroll-indicator">
+      Scroll Progress: <span id="scrollPercentage">0</span>%
+    </div>
+
+    <header class="header">
+      <div class="sub-header"></div>
+
+      <div class="mid-header nav-bar">
+        <ul class="nav-list">
+          <li><a id="home" class="nav-button">Home</a></li>
+          <li><a id="about" class="nav-button">About</a></li>
+          <li><a id="experience" class="nav-button">Experience</a></li>
+          <li><a id="projects" class="nav-button">Projects</a></li>
+        </ul>
+      </div>
+
+      <div class="sub-header contact">
+        <a
+          href="https://www.linkedin.com/in/benjamin-hng/"
+          class="fa fa-linkedin"
+        ></a>
+        <a href="https://github.com/hungbenjamin402/" class="fa fa-github"></a>
+      </div>
+    </header>
+
+    <div class="main-section">
+      <div class="introduction">
+        <div class="intro">
+          <p id="my-name">Benjamin<span id="last-name">Nguyen</span></p>
+          <div class="picture-intro reveal">
+            <img id="profile-pic" src="./static/img/portrait.jpg" />
+            <p id="intro-paragraph">
+              Hi! My name is Benjamin (Hung) Nguyen. I'm a Computer Science
+              student at California State University, Fullerton, with a passion
+              for software engineering and a love for problem-solving.
+            
+              <br><br> Always up for a challenge and excited to collaborate with like-minded
+              folks—feel free to reach out anytime!
+            </p>
+          </div>
+        </div>
+      </div>
+
+      <!-- <div class="about"">
+                <h1>About</h1>
+                
+            </div> -->
+
+      <div class="experience">
+        <h1>Experience</h1>
+
+        <div class="experiences-showcase">
+          <div class="experiences-row">
+            <div class="experience">
+              <h2>Open-Source Software Engineer at PKG</h2>
+              <img src="/static/img/ojs_experience.jpeg" alt="PKG Experience" />
+              <p>
+                During my six-week internship with CodeDay and the Computing
+                Talent Initiative (CTI), I worked alongside two teammates to
+                automate the deployment of the open-source Open Journal System
+                (OJS) on Microsoft Azure using Terraform. We developed modular
+                Terraform configurations to provision infrastructure components,
+                including virtual machines, MySQL servers, and a secure 4-tier
+                virtual network architecture. Additionally, we implemented Bash
+                scripts to automate dependency installation and address
+                deployment challenges like Azure region limitations and file
+                permissions. By ensuring scalability, consistency, and security,
+                making it easier for our solution streamlined OJS deployment for
+                academic institutions worldwide—especially in developing
+                regions—to adopt and manage OJS efficiently.
+              </p>
+            </div>
+
+            <div class="experience">
+              <h2>Summer Analyst at JPMorgan Chase</h2>
+              <img
+                src="/static/img/chase_experience.jpg"
+                alt="Chase Experience"
+              />
+              <p>
+                While working with JPMorgan Chase’s Government Banking team, I
+                had the opportunity to dive into municipal finance, leveraging
+                innovative in-house tools to uncover strategic opportunities.
+                Through detailed analysis and research, I identified a $1.8
+                million bond refunding opportunity for the Aquarium of the
+                Pacific in Long Beach, California—highlighting a path to
+                significant cost savings and financial optimization. This
+                experience allowed me to bridge technical tools with real-world
+                impact, supporting a meaningful project for a renowned
+                institution.
+              </p>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="projects">
+        <h1>Projects</h1>
+
+        <div class="projects-showscase">
+          <div class="projects-details">
+            <div class="project-image">
+              <!-- You can replace the placeholder with your actual image -->
+              <img
+                src="./static/img/Tripsplit presentation.jpg"
+                alt="Terraform Project"
+              />
+            </div>
+
+            <h1>Tripsplit</h1>
+
+            <p>
+              Managing group expenses can quickly become a headache, which
+              inspired me to create Tripsplit—a full-stack mobile application
+              designed to simplify expense management with seamless precision.
+              Built with React Native and Expo, Tripsplit combines modern mobile
+              development with powerful cloud infrastructure, leveraging AWS
+              services (S3, EC2, CloudWatch) for scalability and Amazon Textract
+              for smart receipt OCR. At its core, a sophisticated
+              expense-splitting algorithm ensures fair and transparent
+              cost-sharing, while Firebase enables real-time updates and smooth
+              synchronization across devices.
+            </p>
+
+            <div class="tech-stack">
+              <div class="sub-tech-stack">
+                <p>React Native</p>
+              </div>
+
+              <div class="sub-tech-stack">
+                <p>Express.js</p>
+              </div>
+
+              <div class="sub-tech-stack">
+                <p>AWS</p>
+              </div>
+            </div>
+          </div>
+
+          <div class="projects-details">
+            <div class="project-image">
+              <!-- You can replace the placeholder with your actual image -->
+              <img
+                src="./static/img/mock-portrait.jpg"
+                alt="Terraform Project"
+              />
+            </div>
+            <h1>Synchronize</h1>
+
+            <p>
+              Juggling events and tasks can feel overwhelming, so I built an iOS
+              application that seamlessly combines calendar and reminder
+              functionalities to simplify organization and enhance productivity.
+              Using Swift and CoreData, I ensured robust and persistent data
+              storage, while integrating EventKit and CalendarKit to synchronize
+              calendar events and to-do tasks effortlessly. The result is a
+              unified, intuitive view of commitments, empowering users to stay
+              on top of their schedules with confidence and clarity.
+            </p>
+
+            <div class="tech-stack">
+              <div class="sub-tech-stack">
+                <p>Swift</p>
+              </div>
+
+              <div class="sub-tech-stack">
+                <p>CoreData</p>
+              </div>
+
+              <div class="sub-tech-stack">
+                <p>EventKit</p>
+              </div>
+            </div>
+          </div>
+
+          <div class="projects-details">
+            <div class="project-image">
+              <!-- You can replace the placeholder with your actual image -->
+              <img
+                src="./static/img/mock-portrait.jpg"
+                alt="Terraform Project"
+              />
+            </div>
+
+            <h1>Vibe Bot</h1>
+
+            <p>
+              To make listening to music with friends more seamless, I created a
+              Python-based Discord music bot 'Vibe Bot' that brings smooth music
+              streaming right into Discord servers. Using discord.py for
+              interactions and yt-dlp for YouTube video extraction and playback,
+              the bot enables features like YouTube search, random track
+              selection, playback queue management, and history tracking. I
+              integrated YouTube data retrieval through RESTful API calls with
+              the requests library and ensured secure handling of environment
+              variables with dotenv. By leveraging asynchronous programming with
+              asyncio, the bot efficiently manages I/O-bound tasks, delivering a
+              responsive and enjoyable music experience for users.
+            </p>
+
+            <div class="tech-stack">
+              <div class="sub-tech-stack">
+                <p>Python</p>
+              </div>
+
+              <div class="sub-tech-stack">
+                <p>discord.py</p>
+              </div>
+
+              <div class="sub-tech-stack">
+                <p>RESTful API</p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="footer">
+      <p>LinkedIn</p>
+      <p>GitHub</p>
+      <p>Email - hungbenjamin402@gmail.com</p>
+    </div>
+
+    <script src="./js/script.js"></script>
+  </body>
+</html>
